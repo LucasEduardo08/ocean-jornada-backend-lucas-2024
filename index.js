@@ -22,7 +22,8 @@ app.use(express.json())
 
 // Create - POST /item
 app.post("/item", function(req, res){
-  console.log(req.body)  
+  const item = req.body.nome  // obter o nome enviado do req
+  lista.push(item)            // Adiciona na lista
   res.send('Create')
 })
 
