@@ -16,5 +16,16 @@ const lista = ["Rick Sanchez", "Morty Smith", "Summer Smith"]
 app.get("/item", function(req, res){
   res.send(lista)
 })
-  
+
+// Sinalizando ao Express a utilização do JSON
+app.use(express.json())
+
+// Create - POST /item
+app.post("/item", function(req, res){
+  console.log(req.body)  
+  res.send('Create')
+})
+
+
+
 app.listen(3000)
