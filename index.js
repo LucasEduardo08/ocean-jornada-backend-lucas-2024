@@ -24,7 +24,7 @@ app.use(express.json())
 app.post("/item", function(req, res){
   const item = req.body.nome  // obter o nome enviado do req
   lista.push(item)            // Adiciona na lista
-  res.send('Create')
+  res.send('Item adicionado com sucesso')
 })
 
 
