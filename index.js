@@ -16,7 +16,7 @@ const lista = ["Rick Sanchez", "Morty Smith", "Summer Smith"]
 app.get("/item", function(req, res){
   res.send(lista)
 })
-
+ 
 // Sinalizando ao Express a utilização do JSON
 app.use(express.json())
 
